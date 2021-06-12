@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Contact With Gyanam</title>
+    <link rel="shortcut icon" href="images/appletouchicon.PNG" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="public/contact.css">
+</head>
+
+<body>
+
+    <div id="myDiv" class="container">
+        <h3>Contact Form</h3>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" class="form-control" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" class="form-control" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country" class="form-control">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">India</option>
+                <option value="usa">Netherland</option>
+                <option value="usa">USA</option>
+            </select>
+
+        <label for="emailname">Email</label>
+        <input type="email" name="emailname" class="form-control" id="emailname" placeholder="Your email..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <button class="btn btn-success" onclick="send()">Submit</button>
+        <br>
+        <h4>You want to direct contact me via email
+            <a href="mailto:pythoncoder13@gmail.com?Subject=Hello gyanam!">gyanam@info.com</a>
+            <br> My work email <a href="mailto:teamprovid@gmail.com">support@provid.com</a>
+        </h4>
+        <br>
+    </div>
+
+    <div id="success_div" style="display: none;">
+        <center>
+            <h2 class="text-success">
+                <b>
+                    Successfully Send!
+                </b>
+            </h2>
+            <br>
+            <h4>Any issue to contacting me please email me on this emal is <a href="mailto:pythoncoder13@gmail.com">gyanam@provido.in</a> </h4>
+            <br>
+            <img class="random_img" src="https://source.unsplash.com/1600x900/?programmer" alt="">
+        </center>
+    </div>
+
+    <script type="text/javascript" src="src/contact.js"></script>
+</body>
+
+</html>
